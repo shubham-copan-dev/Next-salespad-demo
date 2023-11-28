@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+nav {
+  padding: 1rem;
+  background-color: coral;
+  border: 1px solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  font-size: 22px;
+}
+.logo {
+  cursor: pointer;
+}
+.submit-btn {
+  margin-top: 8px;
+}
