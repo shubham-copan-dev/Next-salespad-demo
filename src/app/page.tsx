@@ -23,29 +23,20 @@ const Auth = () => {
   }, [token, authorize, router]);
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       {!authorize && <h2>Verifying....</h2>}
       {authorize && (
-        <main>
-          <div className="page-wrapper">
-            <TopNavigation />
-            <div className="page-content-wrapper">
-              <Sidenav />
-              <p className="page-content">
-                <div>
-                  <h2>This is a default Home page content for user</h2>
-                  <h6>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem natus, odit commodi quas ab corporis enim. Eos alias
-                    itaque officia vitae corporis! Ducimus cupiditate distinctio
-                    eveniet quibusdam illo. In, voluptatum.
-                  </h6>
-                </div>
-              </p>
-            </div>
-            <Footer />
+        <p className="page-content">
+          <div>
+            <h2>This is a default Home page content for user</h2>
+            <h6>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              natus, odit commodi quas ab corporis enim. Eos alias itaque
+              officia vitae corporis! Ducimus cupiditate distinctio eveniet
+              quibusdam illo. In, voluptatum.
+            </h6>
           </div>
-        </main>
+        </p>
       )}
     </div>
   );

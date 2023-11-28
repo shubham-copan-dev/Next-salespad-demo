@@ -1,4 +1,5 @@
-// "use client";
+"use client";
+
 import React from "react";
 import dashboards from "@/app/utilities/dashboardConfig";
 import Button from "../common/button/Button";
@@ -13,7 +14,7 @@ const Sidenav = () => {
     <aside className="side-nav">
       {dashboards.map((item) => (
         <div key={item.id}>
-          <Link href={`/${item.id}`}>
+          <Link href={item.id === "home" ? "/" : `/dashboard/${item.id}`}>
             <Button
               classes="primary"
               value={item.label}
